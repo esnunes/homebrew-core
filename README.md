@@ -1,4 +1,4 @@
-# Esnunes Core
+# esnunes core formulae
 
 ## How do I install these formulae?
 

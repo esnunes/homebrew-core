@@ -10,11 +10,9 @@ class Odin < Formula
   head "https://github.com/odin-lang/Odin.git", branch: "master"
 
   bottle do
-    sha256 cellar: :any,                 arm64_monterey: "5b3bdfebf981c9a493ef5ff64219ac6d7959b9cf61ea8ce122da60be5e46666b"
-    sha256 cellar: :any,                 arm64_big_sur:  "e26552b8028335a62184199c9aa138eeb315f53f0ae16d4416e82f2d2b84688a"
-    sha256 cellar: :any,                 monterey:       "bfcb5cd1468bbf2d49678e6056d17bcdc4df5aabcff055e0aac94873975c2085"
-    sha256 cellar: :any,                 big_sur:        "8270c0c05cc3e80129d931332662341e248145b36753cd3ac1aa70846d077f48"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:   "d8e2214cd00c5e3fb1deac87a5eef246a0947c115aa2f74782ab0b9a90ba2fb0"
+    root_url "https://github.com/esnunes/homebrew-tap/releases/download/odin-2022-07"
+    sha256 cellar: :any,                 big_sur:      "6b6ddeaa72a94164125d6fc6d13f16df0c8efb944fdcb40e5c22afc35e3f5379"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "217cc0ffa7a131031863051c7d8603330cc16296ae92170276f2b8e314daf191"
   end
 
   depends_on "llvm"
